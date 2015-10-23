@@ -1,0 +1,15 @@
+box: wercker/default
+build:
+  steps:
+    - arjen/hugo-build:
+        theme: hyde
+        config: config.toml
+        flags: --disableSitemap=true
+deploy:
+  steps:
+    - lukevivier/gh-pages:
+        token: $GIT_TOKEN
+        repo: kidd001/kidd001.github.io
+        path: public
+        domain: www.kocka-gene.io
+        basedir: build
