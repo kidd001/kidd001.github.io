@@ -2,13 +2,14 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.14"
-        theme: redlounge
+        theme: hyde
         config: config.toml
         flags: --disableSitemap=true
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
+    - lukevivier/gh-pages:
         token: $GIT_TOKEN
+        repo: kidd001/kidd001.github.io
+        path: public
         domain: www.kocka-gene.io
         basedir: build
