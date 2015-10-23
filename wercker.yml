@@ -12,3 +12,4 @@ build:
         token: $GIT_TOKEN
         domain: www.kocka-gene.io
         basedir: build
+
