@@ -1,0 +1,4 @@
+baseurl = "http://www.kocka-gene.io/"
+languageCode = "en-us"
+title = "Hugo Portfolio"
+theme = "hyde"
