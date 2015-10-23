@@ -6,10 +6,9 @@ build:
         theme: redlounge
         config: config.toml
         flags: --disableSitemap=true
-        deploy:
+deploy:
   steps:
-    - gh-pages:
+    - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: www.kocka-gene.io
         basedir: build
-
