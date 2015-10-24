@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo Portfolio</title>
+    <link>http://www.kocka-gene.io/post/</link>
+    <description>Recent content in Posts on Hugo Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Oct 2015 02:22:48 +1300</lastBuildDate>
+    <atom:link href="http://www.kocka-gene.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fourth</title>
+      <link>http://www.kocka-gene.io/post/fourth/</link>
+      <pubDate>Sat, 24 Oct 2015 02:22:48 +1300</pubDate>
+      
+      <guid>http://www.kocka-gene.io/post/fourth/</guid>
+      <description>&lt;p&gt;yay!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>third</title>
+      <link>http://www.kocka-gene.io/post/third/</link>
+      <pubDate>Sat, 24 Oct 2015 00:40:42 +1300</pubDate>
+      
+      <guid>http://www.kocka-gene.io/post/third/</guid>
+      <description>&lt;p&gt;hhaha&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>second</title>
+      <link>http://www.kocka-gene.io/post/second/</link>
+      <pubDate>Fri, 23 Oct 2015 20:53:27 +1300</pubDate>
+      
+      <guid>http://www.kocka-gene.io/post/second/</guid>
+      <description>&lt;p&gt;Got it&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>http://www.kocka-gene.io/post/first/</link>
+      <pubDate>Thu, 22 Oct 2015 22:34:24 +1300</pubDate>
+      
+      <guid>http://www.kocka-gene.io/post/first/</guid>
+      <description>&lt;p&gt;yes yes yes&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
