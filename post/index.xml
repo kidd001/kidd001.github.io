@@ -6,10 +6,27 @@
     <description>Recent content in Posts on Hugo Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Sat, 24 Oct 2015 02:22:48 +1300</lastBuildDate>
     <atom:link href="http://www.kocka-gene.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+=======
+    <lastBuildDate>Sun, 25 Oct 2015 00:26:26 +1300</lastBuildDate>
+    <atom:link href="http://www.kocka-gene.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fifth</title>
+      <link>http://www.kocka-gene.io/post/fifth/</link>
+      <pubDate>Sun, 25 Oct 2015 00:26:26 +1300</pubDate>
+      
+      <guid>http://www.kocka-gene.io/post/fifth/</guid>
+      <description>&lt;p&gt;wewewe&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+>>>>>>> 1abbb4b8abd0ffd80ded15367bb0fb2217bfa278
       <title>fourth</title>
       <link>http://www.kocka-gene.io/post/fourth/</link>
       <pubDate>Sat, 24 Oct 2015 02:22:48 +1300</pubDate>
