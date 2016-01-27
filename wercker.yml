@@ -7,10 +7,7 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
-    - install-packages:
-    packages: git ssh-client
-    - leipert/git-push:
-         gh_oauth: $GIT_TOKEN
-         repo: kidd001/kidd001.github.io
-         branch: master
-         basedir: public
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: www.kocka-gene.io
+        basedir: public
