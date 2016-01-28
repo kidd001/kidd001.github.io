@@ -7,6 +7,10 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
+    - arjen/hugo-build:
+        version: 0.14
+        theme: hyde
+        flags: --disableSitemap=true
     - install-packages:
         packages: git ssh-client
     - leipert/git-push:
