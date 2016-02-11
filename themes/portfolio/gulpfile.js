@@ -1,4 +1,5 @@
-var gulp = require('gulp')
+var gulp = require('gulp'),
+  watch = require('gulp-watch'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
 	minifyCSS = require('gulp-minify-css');
@@ -8,8 +9,15 @@ gulp.task('compress', function() {
     .pipe(concat('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('static/js/'));
-  gulp.src(['assets/css/blog.css', 'assets/css/syntax-highlighter.css', 'assets/css/custom.css'])
-    .pipe(concat('all.min.css'))
+  gulp.src(['assets/css/poole.css', 'assets/css/hyde.css', 'assets/css/syntax.css'])
+    .pipe(concat('style.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('static/css/'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch('assets/css/*.css', ['compress']);
+  gulp.watch('assets/js/*.js', ['compress']);
+});
+
+gulp.task('default', ['compress', 'watch']);
