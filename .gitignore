@@ -1,3 +1,5 @@
 /public
 node_modules/
 themes/portfolio/node_modules/
+*.map
+themes/portfolio/assets/vendor/
