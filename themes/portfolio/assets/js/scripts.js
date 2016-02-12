@@ -1,0 +1,3 @@
+$(function(){
+    $("#light-slider").lightSlider();
+});
