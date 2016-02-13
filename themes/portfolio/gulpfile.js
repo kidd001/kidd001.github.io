@@ -15,11 +15,13 @@ gulp.task('compress', function() {
     .pipe(sourcemaps.init())  // Process the original sources
       .pipe(sass())
     .pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(concat('base.min.css'))
+    .pipe(minifyCSS())
     .pipe(gulp.dest('static/css/'));  
 });
 
 gulp.task('watch', function() {
-  gulp.watch('assets/css/*.css', ['compress']);
+  gulp.watch('assets/scss/*.scss', ['compress']);
   gulp.watch('assets/js/*.js', ['compress']);
 });
 
