@@ -7,15 +7,15 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('compress', function() {
-  gulp.src(['assets/vendor/jquery/dist/jquery.js', 'assets/vendor/lightslider/dist/js/lightslider.js', 'assets/js/scripts.js'])
-    .pipe(concat('all.min.js'))
+  gulp.src(['assets/vendor/jquery/dist/jquery.js', 'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap.js', 'assets/vendor/lightslider/dist/js/lightslider.js', 'assets/js/scripts.js'])
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('static/js/'));
-  gulp.src('assets/scss/base.scss')
+  gulp.src('assets/scss/style.scss')
     .pipe(sourcemaps.init())  // Process the original sources
       .pipe(sass())
     .pipe(sourcemaps.write()) // Add the map to modified source.
-    .pipe(concat('base.min.css'))
+    .pipe(concat('style.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('static/css/'));  
 });
