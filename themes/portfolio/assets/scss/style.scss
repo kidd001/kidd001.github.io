@@ -1,6 +1,14 @@
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../fonts/streamline/style";
+@import "../vendor/bourbon/app/assets/stylesheets/bourbon";
 
 @import "poole";
 @import "hyde";
 @import "syntax";
+
+@import "fonts/streamline/style";
+@include font-face("ProximaNova-Bold", "/fonts/ProximaNova-Bold/ProximaNova-Bold", $file-formats: eot woff ttf svg);
+@include font-face("ProximaNova-Regular", "/fonts/ProximaNova-Regular/ProximaNova-Regular", $file-formats: eot woff ttf svg);
+
+body {
+	font-family: "ProximaNova-Regular","Helvetica","Roboto","Arial",sans-serif;
+}
